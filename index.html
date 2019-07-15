@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Capital Game!</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="./capital_game.css" rel="stylesheet" />
+
+    <style>
+        td {
+            border: 1px solid black;
+            border-right: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+        }
+    </style>
+</head>
+
+<body>
+<iframe 
+  width="500"
+  height="400"
+  frameborder="0" style="border:0" id="map"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCE8xJP40mQv9edadOzOavR2bX8VMYuB30
+    &q=United States
+    &maptype=satellite" allowfullscreen >
+
+</iframe>
+
+
+
+    <!--Your HTML here-->
+
+    <h1 class="fonttype" align="center">Do you know the capital of this country?</h1>
+    <table cellspacing="0" align="center" id="myTable">
+        <thead>
+            <tr class="border">
+                <td>
+                    <b>Country</b>
+                </td>
+                <td>
+                    <b>Capital</b>
+                </td>
+                <td>
+                    <b>Answer</b>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="borderothercolor">
+                <td id="pr2__question"></td>
+                <td>
+                    <input type="text" id="pr2__answer">
+                </td>
+
+                <td>
+                    <button id="pr2__submit">See Answer</button>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr class="borderothercolor">
+                <td>
+                    <label><input type="radio" name="resultType" id="all" value="all" checked> ALL</label>
+                	
+                
+                    <label><input type="radio" name="resultType" id="all" value="correct"> Correct</label>
+                
+                
+                    <label><input type="radio" name="resultType" id="all" value="incorrect"> Incorrect</label></br>
+                    <button id="pr3__clear">Clear</button>
+                </td>
+
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+
+            </tr>`
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <!--Your  &#10003   HTML here-->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCE8xJP40mQv9edadOzOavR2bX8VMYuB30",
+    authDomain: "pr3-psam.firebaseapp.com",
+    databaseURL: "https://pr3-psam.firebaseio.com",
+    projectId: "pr3-psam",
+    storageBucket: "pr3-psam.appspot.com",
+    messagingSenderId: "77546833616"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+
+
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="./country_capital_pairs.js"></script>
+    <script src="./capital_game.js"></script>
+    <!-- <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCE8xJP40mQv9edadOzOavR2bX8VMYuB30&callback=initMap"></script>
+</body> -->
+
+</html>

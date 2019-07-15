@@ -1,0 +1,54 @@
+body {
+    background-color: #eee;
+}
+
+/*your code here*/
+
+.blue{
+ 		color: blue;
+ 	}
+ 	
+.red{
+	color: red;
+}
+
+.fonttype{
+
+	  font-size: 22px;
+	  font-family: 'K2D', sans-serif;
+
+
+}
+
+
+iframe {
+	display: block;
+	 margin:  0 auto;
+}
+
+td {
+    padding: 5px;
+    font-family: 'K2D', sans-serif;
+    font-size: 16px;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: 'K2D', sans-serif;
+}
+
+.border{
+	border-bottom: 1px solid black;
+}
+
+.borderothercolor{
+	border-bottom: 1px solid #cccccc;
+
+}
+
+
+/*your code here*/
+th, td, tr {
+    text-align: left;
+    font-family: 'K2D', sans-serif;
+}
